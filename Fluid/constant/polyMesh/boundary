@@ -1,0 +1,91 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    oversetPatch
+    {
+        type            overset;
+        inGroups        1(overset);
+        nFaces          0;
+        startFace       268825;
+    }
+    inlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          300;
+        startFace       268825;
+    }
+    outlet
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          300;
+        startFace       269125;
+    }
+    frontAndBack
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          240000;
+        startFace       269425;
+    }
+    upperWall
+    {
+        type            patch;
+        nFaces          400;
+        startFace       509425;
+    }
+    lowerWall
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          400;
+        startFace       509825;
+    }
+    sides
+    {
+        type            overset;
+        inGroups        1(overset);
+        nFaces          498;
+        startFace       510225;
+    }
+    sidesfront
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          14910;
+        startFace       510723;
+    }
+    sidesback
+    {
+        type            empty;
+        inGroups        1(empty);
+        nFaces          14910;
+        startFace       525633;
+    }
+    flap
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          92;
+        startFace       540543;
+    }
+)
+
+// ************************************************************************* //

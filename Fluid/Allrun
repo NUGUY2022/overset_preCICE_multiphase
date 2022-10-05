@@ -1,0 +1,23 @@
+#!/bin/sh
+cd "${0%/*}" || exit                                # Run from this directory
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions        # Tutorial run functions
+#------------------------------------------------------------------------------
+
+rm -rf 0
+rm -rf log.*
+
+mkdir 0
+rm -rf 0
+rm -rf processor*
+rm -rf post*
+cp -r 0.orig 0
+
+runApplication topoSet
+runApplication setFields
+runApplication decomposePar
+
+runParallel $(getApplication)
+#runApplication reconstructPar
+#rm -rf processor*
+
+echo Simulation complete.
