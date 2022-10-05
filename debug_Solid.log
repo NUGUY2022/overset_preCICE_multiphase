@@ -1,0 +1,24 @@
+(0) 14:59:28 [impl::SolverInterfaceImpl]:169 in configure: [0mThis is preCICE version 2.4.0
+(0) 14:59:28 [impl::SolverInterfaceImpl]:170 in configure: [0mRevision info: no-info [Git failed/Not a repository]
+(0) 14:59:28 [impl::SolverInterfaceImpl]:171 in configure: [0mBuild type: Release (without debug log)
+(0) 14:59:28 [impl::SolverInterfaceImpl]:189 in configure: [0mConfiguring preCICE with configuration "./precice-config.xml"
+(0) 14:59:28 [impl::SolverInterfaceImpl]:190 in configure: [0mI am participant "Calculix"
+(0) 14:59:28 [impl::SolverInterfaceImpl]:262 in initialize: [0mSetting up primary communication to coupling partner/s
+(0) 14:59:28 [impl::SolverInterfaceImpl]:276 in initialize: [0mPrimary ranks are connected
+(0) 14:59:28 [impl::SolverInterfaceImpl]:280 in initialize: [0mSetting up preliminary secondary communication to coupling partner/s
+(0) 14:59:28 [partition::ProvidedPartition]:121 in prepare: [0mPrepare partition for mesh Solid
+(0) 14:59:28 [partition::ProvidedPartition]:88 in communicate: [0mGather mesh Solid
+(0) 14:59:28 [partition::ProvidedPartition]:105 in communicate: [0mSend global mesh Solid
+(0) 14:59:28 [impl::SolverInterfaceImpl]:288 in initialize: [0mSetting up secondary communication to coupling partner/s
+(0) 14:59:28 [impl::SolverInterfaceImpl]:294 in initialize: [0mSecondary ranks are connected
+(0) 14:59:28 [impl::SolverInterfaceImpl]:328 in initialize: [0miteration: 1 of 100, time-window: 1, time: 0 of 5, time-window-size: 0.0001, max-timestep-length: 0.0001, ongoing: yes, time-window-complete: no, write-iteration-checkpoint 
+(0) 14:59:28 [cplscheme::BaseCouplingScheme]:183 in initializeData: [0minitializeData is skipped since no data has to be initialized.
+(0) 14:59:31 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Displacements0" = inf, limit = 1.00e-08, normalization = 0.00e+00, conv = true
+(0) 14:59:31 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Forces0" = 1.00e+00, limit = 1.00e-08, normalization = 1.49e-03, conv = false
+(0) 14:59:31 [impl::SolverInterfaceImpl]:464 in advance: [0miteration: 2 of 100, time-window: 1, time: 0 of 5, time-window-size: 0.0001, max-timestep-length: 0.0001, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+(0) 14:59:36 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Displacements0" = 1.00e+00, limit = 1.00e-08, normalization = 5.99e-10, conv = false
+(0) 14:59:36 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Forces0" = 9.00e-01, limit = 1.00e-08, normalization = 1.49e-03, conv = false
+(0) 14:59:36 [impl::SolverInterfaceImpl]:464 in advance: [0miteration: 3 of 100, time-window: 1, time: 0 of 5, time-window-size: 0.0001, max-timestep-length: 0.0001, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
+(0) 14:59:41 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Displacements0" = 9.88e-01, limit = 1.00e-08, normalization = 5.99e-09, conv = false
+(0) 14:59:41 [cplscheme::BaseCouplingScheme]:547 in measureConvergence: [0mrelative convergence measure: relative two-norm diff of data "Forces0" = 1.00e+00, limit = 1.00e-08, normalization = 7.14e+55, conv = false
+(0) 14:59:41 [impl::SolverInterfaceImpl]:464 in advance: [0miteration: 4 of 100, time-window: 1, time: 0 of 5, time-window-size: 0.0001, max-timestep-length: 0.0001, ongoing: yes, time-window-complete: no, read-iteration-checkpoint 
